@@ -3506,10 +3506,12 @@ input, select, textarea {
 
 				#banner h2 {
 					font-size: 1.5em;
+					
 				}
 
 				#banner p {
 					font-size: 0.8em;
+					
 				}
 
 		}
@@ -4174,7 +4176,25 @@ input, select, textarea {
 	height: 40px;
 }
 
-.title>h2 {
+.title>h2, .title>ul, .title>p {
 	text-align: center;
-	width: 50%;
+	width: 50% !important;
+	white-space: nowrap;
+}
+
+.title>h2, .title>p, .title>ul {
+	min-width: 25rem;
+}
+
+.list {
+	text-align: center;
+}
+
+.list>li {
+	text-align: left;
+}
+
+.listTitle {
+	text-align: center;
+	white-space: nowrap;
 }
