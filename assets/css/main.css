@@ -2476,9 +2476,8 @@ input, select, textarea {
 		}
 
 	ul {
-		list-style: disc;
+		list-style: none;
 		margin: 0 0 2em 0;
-		padding-left: 1em;
 	}
 
 		ul li {
@@ -4178,23 +4177,27 @@ input, select, textarea {
 
 .title>h2, .title>ul, .title>p {
 	text-align: center;
-	width: 50% !important;
-	white-space: nowrap;
+	width: 100%;
+	/*white-space: nowrap;*/
 }
 
-.title>h2, .title>p, .title>ul {
-	min-width: 25rem;
+@media only screen and (min-width: 768px) {
+	.title>h2, .title>p, .title>ul {
+		width: 50% !important;
+	}
 }
 
-.list {
-	text-align: center;
-}
 
 .list>li {
-	text-align: left;
+	text-align: center;
 }
 
 .listTitle {
 	text-align: center;
-	white-space: nowrap;
+	/*white-space: nowrap;*/
+}
+
+.major {
+	font-size: 1.6em;
+	
 }
