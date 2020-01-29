@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>PayMate Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Austin Tricquet</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="generic.html">Projects</a></li>
+								<li><a href="elements.html">Elements</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner title">
+								<h2>PayMate</h2>
+								<p>Weekly payroll and financial reporting software</p>
+								<ul class="actions fit small">
+									<li><a href="#" class="button fit small">Github - Coming soon!</a></li>
+									<li><a href="#" class="button fit small">Demo - Coming soon!</a></li>
+								</ul>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">The Problem: What a mess!</h3>
+									<p>Contracted prison labor payroll system was insecure, confusing to understand and operate the payroll in a timely manner. Tasked with simplifing the process and insuring the payroll system accuracy.</p>
+									<p>Initial Findings:</p>
+									<ul>
+										<li>- Very Confusing and complicated system based in Microsoft Excel.</li>
+										<li>- Low accountability for system accuracy and insecure employee information.</li>
+										<li>- Few with the experience or understanding to maintain the system.</li>
+									</ul>
+
+									<h3 class="major">Solution 1: Making sparks with Tkinter</h3>
+									<p>Once I saw the oppurtunity to improve this process, I challenged myself to learn programming. I quickly discovered that programming is my passion. Since I already had some basic understanding of Python, That's where I started to learn more about Python and to provide a solution to this problem.</p>
+									<p>Solution 1:</p>
+									<ul>
+										<li>- Technologies and tools used: Python, Tkinter, Microsoft Access & Excel, Visual Studio</li>
+										<li>- Access database already in use, exports a pay roster to excel which the app can access.</li>
+										<li>- GUI created with Tkinter, used to enter hours for each employee instead of an Excel sheet.</li>
+									</ul>
+									<p>Problems with Solution 1:</p>
+									<ul>
+										<li>- Limited programming experience led to poor design of code which became an issue in expanding the software to include additional departments and shift codes used in calculations.</li>
+										<li>- Tkinter limitations and UI layout was poorly designed and need a more modern implementation.</li>
+										<li>- Fixing bugs and issues with deployment, became increasingly difficult due to poor code design.</li>
+									</ul>
+
+
+									<h3 class="major">Solution 2: Django was his name-o</h3>
+									<p>By taking online classes, I gained further experience programming and understanding better design principles in code. The flaws in the first solution were evident. For the next solution I chose to use Django given my experience with Python and the ability to provide a better UI experience than Tkinter.</p>
+									<p>Solution 2:</p>
+									<ul>
+										<li>- Technologies and tools used: Django, Python, HTML, CSS, Javascript, JQuery, Bootstrap 4, PostgreSQL, VSCode, Git & Github</li>
+										<li>- Used Git and Github for version control and logging updates on progress during development.</li>
+										<li>- Added new features including: proper user Authentication, User permissions, Admin panel to add users, change user permissions, edit employee information, Add and remove departments and work locations etc.</li>
+									</ul>
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Get in touch</h2>
+							<p></p>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+							<ul class="contact">
+								<li class="icon solid fa-envelope"><a href="#">AustinTricquet@gmail.com</a></li>
+								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
+								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
