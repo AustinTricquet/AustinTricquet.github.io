@@ -247,7 +247,8 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 0.8em 0;
+		font-size: 1.1em;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -255,7 +256,7 @@ input, select, textarea {
 		font-family: Raleway, Helvetica, sans-serif;
 		font-weight: 700;
 		letter-spacing: 0.1em;
-		margin: 0 0 1em 0;
+		margin: 0 0 0.4em 0;
 		text-transform: uppercase;
 	}
 
@@ -270,7 +271,7 @@ input, select, textarea {
 		}
 
 		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
-			padding-bottom: 1em;
+			padding-bottom: 0.4em;
 			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
 		}
 
@@ -301,7 +302,7 @@ input, select, textarea {
 		}
 
 		h3 {
-			font-size: 0.8em;
+			font-size: 0.9em;
 		}
 
 	}
@@ -2477,11 +2478,12 @@ input, select, textarea {
 
 	ul {
 		list-style: none;
-		margin: 0 0 2em 0;
+		margin: 0 0 1em 0;
 	}
 
 		ul li {
 			padding-left: 0.5em;
+			font-size: 1.1em;
 		}
 
 		ul.alt {
@@ -3174,6 +3176,10 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
+			.payMate {
+				margin-top: 2.75em !important;
+			}
+
 			#header {
 				height: 2.75em;
 				line-height: 2.75em;
@@ -3463,14 +3469,14 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#banner {
-				padding: 7em 0 8.25em 0 ;
+				padding: 7em 0 14em 0 ;
 				background-color: #2e3141;
 				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/profileBackground1.png");
 				background-size: auto,
  cover;
 				background-position: center,
  center;
-				margin-bottom: -6.5em;
+				margin-bottom: -7.5em;
 			}
 
 		}
@@ -3478,8 +3484,8 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			#banner {
-				padding: 12em 3em 12.375em 3em ;
-				margin-bottom: -4.75em;
+				padding: 7em 3em 13em 3em ;
+				margin-bottom: -6.5em;
 			}
 
 				#banner .inner {
@@ -3491,7 +3497,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#banner {
-				padding: 5em 2em 4.25em 2em ;
+				padding: 7em 2em 13em 2em ;
 				margin-bottom: -2.5em;
 			}
 
@@ -3509,7 +3515,7 @@ input, select, textarea {
 				}
 
 				#banner p {
-					font-size: 0.8em;
+					font-size: 0.9em;
 					
 				}
 
@@ -3554,8 +3560,7 @@ input, select, textarea {
 	}
 
 		#wrapper > header .inner {
-			margin: 0 auto;
-			width: 55em;
+			margin: 0 3em;
 		}
 
 		#wrapper > header h2 {
@@ -3601,7 +3606,7 @@ input, select, textarea {
 		}
 
 			#wrapper > header .inner {
-				width: 100%;
+				
 			}
 
 	}
@@ -3682,7 +3687,7 @@ input, select, textarea {
 		}
 
 		.wrapper .inner {
-			padding: 3em 0 1em 0 ;
+			padding: 1.5em 0 1.5em 0 ;
 			margin: 0 auto;
 			width: 55em;
 		}
@@ -3928,7 +3933,7 @@ input, select, textarea {
 				}
 
 				.wrapper .inner {
-					padding: 3em 3em 1em 3em ;
+					padding: 1.5em 3em 1.5em 3em ;
 					width: 100%;
 				}
 
@@ -3963,7 +3968,7 @@ input, select, textarea {
 				}
 
 				.wrapper .inner {
-					padding: 2em 2em 0.1em 2em ;
+					padding: 1.5em 2em 1.5em 2em ;
 				}
 
 				.wrapper.spotlight .inner {
@@ -4001,7 +4006,7 @@ input, select, textarea {
 		@media screen and (max-width: 360px) {
 
 			.wrapper .inner {
-				padding: 2em 1.5em 0.1em 1.5em ;
+				padding: 1.5em 1.5em 1.5em 1.5em ;
 			}
 
 		}
@@ -4175,15 +4180,16 @@ input, select, textarea {
 	height: 40px;
 }
 
-.title>h2, .title>ul, .title>p {
+.title>h2, .title>ul, .title>p, .title>img {
 	text-align: center;
-	width: 100%;
+	min-width: 50%;
+	max-width: 100%;
 	/*white-space: nowrap;*/
 }
 
 @media only screen and (min-width: 768px) {
-	.title>h2, .title>p, .title>ul {
-		width: 50% !important;
+	.title>h2, .title>p, .title>ul, .title>img {
+		width: 60% !important;
 	}
 }
 
@@ -4204,4 +4210,33 @@ input, select, textarea {
 
 html {
 	scroll-behavior: smooth;
+}
+
+
+
+.payMate {
+	padding: 9em 0 6.25em 0 !important;
+	background-color: #2e3141 !important;
+	background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/PayMateBackground.PNG")!important;
+	background-size: auto, cover !important;
+	background-position: center, center !important;
+	margin-top: 3em;
+	
+}
+
+.payMateLogo {
+	background-color: rgba(255, 255, 255, 0.30);
+	max-width: 80%;
+	border-radius: 20px;
+	display: block;
+	padding: 0.4em;
+}
+
+.logoSubText {
+	filter: blur(0);
+    opacity: 1;
+    border-top: solid 2px rgba(255, 255, 255, 0.125);
+    font-size: 0.9em;
+    margin-top: 0.8em;
+    padding-top: 0.4em;
 }
