@@ -247,7 +247,7 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 0.8em 0;
+		margin: 0.8em 0 0.8em 0;
 		font-size: 1.1em;
 	}
 
@@ -4201,9 +4201,6 @@ input, select, textarea {
 	}
 }
 
-
-
-
 .list>li {
 	text-align: center;
 }
@@ -4221,8 +4218,6 @@ input, select, textarea {
 html {
 	scroll-behavior: smooth;
 }
-
-
 
 .payMate {
 	padding: 9em 0 6.25em 0 !important;
@@ -4251,4 +4246,36 @@ html {
 
 .headerShade {
 	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.listInside {
+	list-style: inside;
+}
+
+.left {
+	text-align: left;
+}
+
+.red {
+	color: rgb(233, 58, 58);
+	border-color: rgb(233, 58, 58) !important;
+}
+
+.blue {
+	color: rgb(31, 171, 236);
+	border-color: rgb(31, 171, 236) !important;
+}
+
+.yellow {
+	color: rgb(247, 244, 68);
+	border-color: rgb(247, 244, 68) !important;
+}
+
+.green {
+	color: rgb(54, 240, 54);
+	border-color: rgb(54, 240, 54) !important;
+}
+
+.section {
+	padding-top: 0.8em;
 }
