@@ -2434,14 +2434,14 @@ input, select, textarea {
 
 		.image.left {
 			float: left;
-			padding: 0 1.5em 1em 0;
-			top: 0.25em;
+			padding: 1em 1.5em 1em 0em;
+			
 		}
 
 		.image.right {
 			float: right;
-			padding: 0 0 1em 1.5em;
-			top: 0.25em;
+			padding: 1em 0em 1em 1.5em;
+			
 		}
 
 		.image.fit {
@@ -3557,6 +3557,7 @@ input, select, textarea {
 
 	#wrapper > header {
 		padding: 11em 0 2.25em 0 ;
+		margin-bottom: -6.5em;
 	}
 
 		#wrapper > header .inner {
@@ -4201,6 +4202,13 @@ input, select, textarea {
 	}
 }
 
+@media only screen and (min-width: 2050px) {
+	.title, .titleMain>h2, .titleMain>p, .titleMain>ul {
+		margin: 0 auto;
+    	width: 55em !important;
+	}
+}
+
 .list>li {
 	text-align: center;
 }
@@ -4224,9 +4232,8 @@ html {
 	background-color: #2e3141 !important;
 	background-image: linear-gradient(to top, rgba(167, 208, 228, 0.85), rgba(184, 232, 254, 0.85)), url("../../images/PayMateBackground.PNG")!important;
 	background-size: auto, cover !important;
-	background-position: center, center !important;
+	background-position: top, top !important;
 	margin-top: 3.5em;
-	
 }
 
 .darkBtn>li>a {
@@ -4276,6 +4283,22 @@ html {
 	border-color: rgb(54, 240, 54) !important;
 }
 
-.section {
-	padding-top: 0.8em;
+@media only screen and (max-width: 767px) {
+	.image.right, .image.left {
+		float: none;
+		padding: 1em 0em 1em 0em;
+		max-width: 100%;
+	}
+
+	.payMate {
+		padding: 4em 0 4em 0 !important;
+	}
 }
+
+.image.right, .image.left {
+}
+
+.contain {
+	overflow: hidden;
+}
+
