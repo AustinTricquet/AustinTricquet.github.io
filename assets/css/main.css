@@ -2425,7 +2425,7 @@ input, select, textarea {
 		}
 
 		.image.left, .image.right {
-			max-width: 40%;
+			max-width: 50%;
 		}
 
 			.image.left img, .image.right img {
@@ -2436,11 +2436,13 @@ input, select, textarea {
 			float: left;
 			padding: 1em 1.5em 1em 0em;
 			
+			
 		}
 
 		.image.right {
 			float: right;
 			padding: 1em 0em 1em 1.5em;
+			
 			
 		}
 
@@ -4259,8 +4261,17 @@ html {
 	list-style: inside;
 }
 
+ul li:before {
+	position: absolute;
+	left: -13px;
+}
+
 .left {
 	text-align: left;
+}
+
+.center {
+	text-align: center;
 }
 
 .red {
@@ -4284,21 +4295,39 @@ html {
 }
 
 @media only screen and (max-width: 767px) {
-	.image.right, .image.left {
-		float: none;
-		padding: 1em 0em 1em 0em;
-		max-width: 100%;
-	}
-
 	.payMate {
 		padding: 4em 0 4em 0 !important;
 	}
 }
 
-.image.right, .image.left {
+@media only screen and (max-width: 480px) {
+	.image.left, .image.right {
+		padding: 1em 0em 1em 0em;
+		max-width: 100%;
+		margin: 0 auto;
+	}
 }
+
 
 .contain {
 	overflow: hidden;
 }
 
+.close {
+	padding-top: 2em;
+}
+
+.BtnBottom {
+	width: 50% !important;
+	margin: 4.4em auto;
+}
+
+.BtnBottom>li>a {
+	width: 80%;
+	color: rgb(31, 171, 236) !important;
+	box-shadow: inset 0 0 0 2px rgb(31, 171, 236) !important;
+}
+
+.BtnBottom>li {
+	text-align: center;
+}
