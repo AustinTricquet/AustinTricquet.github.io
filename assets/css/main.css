@@ -4165,9 +4165,11 @@ input, select, textarea {
 	}
 
 .badge {
-	height: 25px;
-	margin: 0px 2px;
+	height: 25px !important;
+	margin: 0px 2px !important;
 }
+
+
 
 .proj {
 	margin-bottom: .5em !important;
@@ -4330,4 +4332,39 @@ ul li:before {
 
 .BtnBottom>li {
 	text-align: center;
+}
+
+.tableList {
+	display: table;
+	margin: 0 auto;
+	text-align: center !important;
+}
+
+.horizontal-list {
+	list-style: none;
+	padding-top: 20px;
+	padding-right: 1em;
+}
+
+.horizontal-list li {
+	display: inline-block;
+	padding: 0.5em 1em;
+	align-self: auto;
+}
+
+.horizontal-list>li>img {
+	margin-bottom: -0.4em !important;
+}
+
+.iconBackground {
+	background-color: white;
+	border-radius: 50%;
+	padding: 0.2em;
+	border-width: 0px;
+}
+
+.subtitle {
+	font-size: 1em;
+	text-align: center;
+	padding-top: 3em;
 }
