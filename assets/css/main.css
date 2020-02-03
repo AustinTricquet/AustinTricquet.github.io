@@ -4208,10 +4208,11 @@ input, select, textarea {
 	height: 40px;
 }
 
-.titleMain>h2, .titleMain>ul, .titleMain>p, .titleMain>img, .title>h2, .title>ul, .title>p, .title>img{
+.titleMain>h2, .titleMain>ul, .titleMain>p, .titleMain>img, .titleMain>div, .title>h2, .title>ul, .title>p, .title>img{
 	text-align: center;
 	min-width: 50%;
 	max-width: 100%;
+	margin: 0 auto;
 	/*white-space: nowrap;*/
 }
 
@@ -4224,13 +4225,14 @@ input, select, textarea {
 }
 
 @media only screen and (min-width: 768px) {
-	.title, .titleMain>h2, .titleMain>p, .titleMain>ul {
+	.title, .titleMain>h2, .titleMain>p, .titleMain>ul, .titleMain>div {
 		width: 60% !important;
+		margin: 0;
 	}
 }
 
 @media only screen and (min-width: 2050px) {
-	.title, .titleMain>h2, .titleMain>p, .titleMain>ul {
+	.title, .titleMain>h2, .titleMain>p, .titleMain>ul, .titleMain>div {
 		margin: 0 auto;
     	width: 55em !important;
 	}
@@ -4371,6 +4373,7 @@ ul li:before {
 
 .horizontal-list {
 	list-style: none;
+	max-width: 40em;
 }
 
 .horizontal-list li {
