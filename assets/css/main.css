@@ -4371,14 +4371,21 @@ ul li:before {
 
 .horizontal-list {
 	list-style: none;
-	padding-top: 20px;
-	padding-right: 1em;
 }
 
 .horizontal-list li {
 	display: inline-block;
 	padding: 0.5em 1em;
 	align-self: auto;
+}
+
+.headerSubtitle>li {
+	padding: 0em 0em;
+	text-align: left !important;
+}
+
+.headerSubtitle>li>p {
+	margin: 0;
 }
 
 .horizontal-list>li>img {
