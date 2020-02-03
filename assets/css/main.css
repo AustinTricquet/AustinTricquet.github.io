@@ -3178,7 +3178,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
-			.payMate {
+			.payMate, .about {
 				margin-top: 2.75em !important;
 			}
 
@@ -4271,6 +4271,15 @@ html {
 	margin-top: 3.5em;
 }
 
+.about {
+	padding: 9em 0 6.25em 0 !important;
+	background-color: #2e3141 !important;
+	background-image: linear-gradient(to top, rgba(46, 49, 65, 0.5), rgba(46, 49, 65, 0.5)), url("../../images/typewriter.jpg")!important;
+	background-size: auto, cover !important;
+	background-position: center, center !important;
+	margin-top: 3.5em;
+}
+
 .darkBtn>li>a {
 	color:rgba(1, 48, 138, 0.95) !important;
 	box-shadow: inset 0 0 0 2px rgba(1, 48, 138, 0.95) !important;
@@ -4328,7 +4337,7 @@ ul li:before {
 }
 
 @media only screen and (max-width: 767px) {
-	.payMate {
+	.payMate, .about {
 		padding: 4em 0 4em 0 !important;
 	}
 }
@@ -4412,3 +4421,5 @@ ul li:before {
 	margin: 0 auto;
 	margin-bottom: 0.4em;
 }
+
+
