@@ -4284,7 +4284,7 @@ html {
 	background-color: #2e3141 !important;
 	background-image: linear-gradient(to top, rgba(46, 49, 65, 0.7), rgba(46, 49, 65, 0.7)), url("../../images/codePic.jpg")!important;
 	background-size: auto, cover !important;
-	background-position: top, top !important;
+	background-position: bottom, bottom !important;
 	margin-top: 3.5em;
 }
 
