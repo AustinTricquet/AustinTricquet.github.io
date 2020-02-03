@@ -4022,10 +4022,10 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		-moz-flex-direction: row;
-		-webkit-flex-direction: row;
-		-ms-flex-direction: row;
-		flex-direction: row;
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
 		-moz-flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
@@ -4041,10 +4041,15 @@ input, select, textarea {
 		#footer .inner form {
 			margin: 0 3em 0 0;
 			width: calc(50% - 1.5em);
+			margin-left: auto;
+			margin-right: auto;
 		}
 
 		#footer .inner .contact {
 			width: calc(50% - 1.5em);
+			margin-bottom: 2em;
+			margin-left: auto;
+			margin-right: auto;
 		}
 
 		#footer .inner .copyright {
@@ -4169,6 +4174,17 @@ input, select, textarea {
 	margin: 0px 2px !important;
 }
 
+@media screen and (max-width: 780px) {
+
+	.row>.col-4 {
+		width: 50%;
+	}
+
+	.row>.col-4:last-of-type {
+		width: 100%;	
+	}
+}
+
 
 
 .proj {
@@ -4213,7 +4229,13 @@ input, select, textarea {
 	}
 }
 
-.list>li {
+.list {
+	display:-moz-inline-stack;
+	display:inline-block;
+	text-align: left;
+}
+
+.row>.col-4 {
 	text-align: center;
 }
 
