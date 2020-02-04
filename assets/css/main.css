@@ -2427,6 +2427,10 @@ input, select, textarea {
 			max-width: 50%;
 		}
 
+		.image.left.aboutpic, .image.right.aboutpic {
+			max-width: 40%;
+		}
+
 			.image.left img, .image.right img {
 				width: 100%;
 			}
@@ -3467,16 +3471,14 @@ input, select, textarea {
 			text-transform: uppercase;
 		}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 4080px) {
 
 			#banner {
-				padding: 7em 0 14em 0 ;
+				padding: 12em 0 16em 0 ;
 				background-color: #2e3141;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/profileBackground1.png");
-				background-size: auto,
- cover;
-				background-position: center,
- center;
+				background-image: linear-gradient(to right, rgba(46, 49, 65, 0.7), rgba(68, 72, 97, 0.7)), url("../../images/profileBackground3.png");
+				background-size: auto,cover;
+				background-position: 100% 15%;
 				margin-bottom: -7.5em;
 			}
 
@@ -4221,7 +4223,7 @@ input, select, textarea {
 
 @media only screen and (min-width: 768px) {
 	.title, .titleMain>h2, .titleMain>p, .titleMain>ul, .titleMain>div {
-		width: 60% !important;
+		width: 40% !important;
 		margin: 0;
 	}
 }
@@ -4230,6 +4232,12 @@ input, select, textarea {
 	.title, .titleMain>h2, .titleMain>p, .titleMain>ul, .titleMain>div {
 		margin: 0 auto;
     	width: 55em !important;
+	}
+
+	#banner {
+		margin: 0 auto;
+		max-width: 100em !important;
+		margin-bottom: -7.5em;
 	}
 }
 
@@ -4322,12 +4330,12 @@ ul li:before {
 
 .red {
 	color: rgb(233, 58, 58);
-	border-color: rgb(233, 58, 58) !important;
+	/*border-color: rgb(233, 58, 58) !important;*/
 }
 
 .blue {
 	color: rgb(31, 171, 236);
-	border-color: rgb(31, 171, 236) !important;
+	/*border-color: rgb(31, 171, 236) !important;*/
 }
 
 .yellow {
@@ -4347,7 +4355,7 @@ ul li:before {
 }
 
 @media only screen and (max-width: 480px) {
-	.image.left, .image.right {
+	.image.left, .image.right, .image.left.aboutpic, .image.right.aboutpic {
 		padding: 1em 0em 1em 0em;
 		max-width: 100%;
 		margin: 0 auto;
