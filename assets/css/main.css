@@ -2427,6 +2427,11 @@ input, select, textarea {
 			max-width: 50%;
 		}
 
+		.image.right.screenshot {
+			max-width: 30%;
+			/*max-height: 30em;*/
+		}
+
 		.image.left.aboutpic, .image.right.aboutpic {
 			max-width: 40%;
 		}
@@ -2438,9 +2443,9 @@ input, select, textarea {
 		.image.left {
 			float: left;
 			padding: 1em 1.5em 1em 0em;
-			
-			
 		}
+
+		
 
 		.image.right {
 			float: right;
@@ -2533,6 +2538,10 @@ input, select, textarea {
 		padding-left: 0;
 	}
 
+	ul.actions.BtnBottomHunny {
+		display: inline;
+	}
+
 		ul.actions li {
 			padding: 0 0 0 1em;
 			vertical-align: middle;
@@ -2557,6 +2566,10 @@ input, select, textarea {
 			-ms-flex-direction: column;
 			flex-direction: column;
 			margin-left: 0;
+		}
+
+		ul.actions.stacked.BtnBottomHunny{
+			padding: 1em 0em 1em 1.5em;
 		}
 
 			ul.actions.stacked li {
@@ -3181,7 +3194,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
-			.payMate, .about, .smallProj {
+			.payMate, .about, .smallProj, .hunny {
 				margin-top: 2.75em !important;
 			}
 
@@ -4205,12 +4218,24 @@ input, select, textarea {
 	height: 40px;
 }
 
-.titleMain>h2, .titleMain>ul, .titleMain>p, .titleMain>img, .titleMain>div, .title>h2, .title>ul, .title>p, .title>img{
+.titleMain>h2, .titleMain>ul, .titleMain>p, .titleMain>img, .titleMain>div, .title>h2, .title>ul, .title>p{
 	text-align: center;
 	min-width: 50%;
 	max-width: 100%;
 	margin: 0 auto;
 	/*white-space: nowrap;*/
+}
+
+.title>img {
+	text-align: center;
+	min-width: 50%;
+	max-width: 100%;
+	margin: 0 auto;
+	display: block;
+}
+
+.hunnyLogo {
+	margin-bottom: 0.5em !important;
 }
 
 .title {
@@ -4265,6 +4290,17 @@ html {
 	scroll-behavior: smooth;
 }
 
+.hunny {
+	background: linear-gradient(to bottom,rgba(253, 181, 139, 0.85),rgb(250, 126, 124, 0.85),rgb(109, 95, 128, 0.85),rgb(46, 90, 129, 0.85))!important;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	padding: 9em 0 6.25em 0 !important;
+	background-color: #2e3141 !important;
+	background-size: auto, cover !important;
+	background-position: top, top !important;
+	margin-top: 3.5em;
+}
+
 .payMate {
 	padding: 9em 0 6.25em 0 !important;
 	background-color: #2e3141 !important;
@@ -4295,9 +4331,12 @@ html {
 .darkBtn>li>a {
 	color:rgba(1, 48, 138, 0.95) !important;
 	box-shadow: inset 0 0 0 2px rgba(1, 48, 138, 0.95) !important;
-	
 }
 
+.darkBtnHunny>li>a {
+	color:white !important;
+	box-shadow: inset 0 0 0 2px white !important;
+}
 .logoSubText {
 	filter: blur(0);
     opacity: 1;
@@ -4305,6 +4344,17 @@ html {
 	font-size: 0.9em;
 	color:rgba(1, 48, 138, 0.95);
 	font-weight: 550 !important;
+}
+
+.logoSubTextHunny {
+	filter: blur(0);
+    opacity: 1;
+	border-top: solid 2px white;
+	font-size: 0.9em;
+	color:white;
+	font-weight: 550 !important;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
 }
 
 .headerShade {
@@ -4328,9 +4378,27 @@ ul li:before {
 	text-align: center;
 }
 
+.hunnyImage {
+	width: fit-content;
+}
+
+.hunnyImage>img {
+	width: 35em;
+	max-width: 100%;
+	padding-bottom: 2em;
+}
+
 .red {
 	color: rgb(233, 58, 58);
 	/*border-color: rgb(233, 58, 58) !important;*/
+}
+
+.hunnyColor {
+	color: rgb(255, 96, 93);
+}
+
+.hunnyColor2 {
+	color: rgb(236, 203, 55);
 }
 
 .blue {
@@ -4349,13 +4417,13 @@ ul li:before {
 }
 
 @media only screen and (max-width: 767px) {
-	.payMate, .about, .smallProj {
+	.payMate, .about, .smallProj, .hunny {
 		padding: 4em 0 4em 0 !important;
 	}
 }
 
 @media only screen and (max-width: 480px) {
-	.image.left, .image.right, .image.left.aboutpic, .image.right.aboutpic {
+	.image.left, .image.right, .image.right.screenshot, .image.left.aboutpic, .image.right.aboutpic {
 		padding: 1em 0em 1em 0em;
 		max-width: 100%;
 		margin: 0 auto;
@@ -4382,7 +4450,15 @@ ul li:before {
 	box-shadow: inset 0 0 0 2px rgb(31, 171, 236) !important;
 }
 
-.BtnBottom>li {
+
+.BtnBottomHunny>li>a {
+	max-width: 300px;
+	min-width: 300px;
+	color: rgb(255, 96, 93) !important;
+	box-shadow: inset 0 0 0 2px rgb(255, 96, 93) !important;
+}
+
+.BtnBottom>li, .BtnBottomHunny>li {
 	text-align: center;
 }
 
