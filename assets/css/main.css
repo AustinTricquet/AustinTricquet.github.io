@@ -4334,8 +4334,8 @@ html {
 }
 
 .darkBtnHunny>li>a {
-	color:white !important;
-	box-shadow: inset 0 0 0 2px white !important;
+	color:black !important;
+	box-shadow: inset 0 0 0 2px black !important;
 }
 .logoSubText {
 	filter: blur(0);
@@ -4349,9 +4349,9 @@ html {
 .logoSubTextHunny {
 	filter: blur(0);
     opacity: 1;
-	border-top: solid 2px white;
+	border-top: solid 2px black;
 	font-size: 0.9em;
-	color:white;
+	color:black;
 	font-weight: 550 !important;
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
@@ -4471,6 +4471,11 @@ ul li:before {
 .horizontal-list {
 	list-style: none;
 	max-width: 40em;
+	margin: auto;
+}
+
+.horizontal-listHunny{
+	margin: 0 !important;
 }
 
 .horizontal-list li {
