@@ -2564,7 +2564,7 @@ input, select, textarea {
 			margin-left: 0;
 		}
 
-		ul.actions.stacked.BtnBottomHunny, ul.actions.stacked.BtnBottomCP{
+		ul.actions.stacked.BtnBottomHunny, ul.actions.stacked.BtnBottomCP, ul.action.stacked.BtnBottomRGB{
 			padding: 1em 0em 1em 1.5em;
 		}
 
@@ -4479,7 +4479,14 @@ ul li:before {
 	box-shadow: inset 0 0 0 2px rgb(214, 52, 206) !important;
 }
 
-.BtnBottom>li, .BtnBottomHunny>li, .BtnBottomCP {
+.BtnBottomRGB>li>a {
+	max-width: 300px;
+	min-width: 300px;
+	color: rgb(40, 145, 231) !important;
+	box-shadow: inset 0 0 0 2px rgb(40, 145, 231) !important;
+}
+
+.BtnBottom>li, .BtnBottomHunny>li, .BtnBottomCP>li, .BtnBottomRGB>li {
 	text-align: center;
 }
 
@@ -4567,4 +4574,12 @@ ul li:before {
 .WIP_Title {
 	font-size: 0.7em;
 	color: white;
+}
+
+.RGB_background {
+	background: linear-gradient(to bottom,rgba(68, 115, 187, 0.85),rgba(56, 138, 204, 0.85),rgba(56, 138, 204, 0.85),rgba(56, 138, 204, 0.85))!important;
+}
+
+.RGBColor {
+	color: rgb(40, 145, 231);
 }
