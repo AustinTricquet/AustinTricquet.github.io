@@ -4475,8 +4475,8 @@ ul li:before {
 .BtnBottomCP>li>a {
 	max-width: 300px;
 	min-width: 300px;
-	color: rgb(214, 52, 206) !important;
-	box-shadow: inset 0 0 0 2px rgb(214, 52, 206) !important;
+	color: rgb(172, 116, 252) !important;
+	box-shadow: inset 0 0 0 2px rgb(172, 116, 252) !important;
 }
 
 .BtnBottomRGB>li>a {
@@ -4558,7 +4558,7 @@ ul li:before {
 }
 
 .CP_background {
-	background: linear-gradient(to bottom,rgba(188, 139, 253, 0.85),rgba(174, 77, 219, 0.85),rgba(123, 79, 185, 0.85),rgb(46, 90, 129, 0.85))!important;
+	background: linear-gradient(to bottom,rgba(123, 79, 185, 0.85),rgba(123, 79, 185, 0.85),rgba(123, 79, 185, 0.85),rgba(123, 79, 185, 0.85))!important;
 }
 
 .MainTitleCoinPortfolio {
@@ -4568,7 +4568,7 @@ ul li:before {
 }
 
 .CPColor {
-	color: rgb(214, 52, 206);
+	color: rgb(172, 116, 252);
 }
 
 .WIP_Title {
